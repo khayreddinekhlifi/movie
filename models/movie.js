@@ -4,15 +4,11 @@ const schema=mongoose.Schema
 
 const movieschema= new schema({
     imgeURL:{
-        type:URL,
         required:true
     },
     author:{
-        name:{
-            type:String,
-            required:true
-        },
-        required:true
+         type:String,
+         required:true
     },
     nameMV:{
         type:String,
@@ -27,3 +23,6 @@ const movieschema= new schema({
         required:true
     }
 })
+
+const film =mongoose.model('film',movieschema)
+ module.exports=film
