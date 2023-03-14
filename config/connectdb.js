@@ -7,5 +7,6 @@ const mongoose =require('mongoose')
     } catch (error) {
         console.log(error)
     }
+  
    }
 module.exports=connectdb
